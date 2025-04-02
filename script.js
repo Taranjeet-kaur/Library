@@ -13,5 +13,15 @@ const theHobbit = new Book("The Hobbit", "J.R.R Tolkein","295", true)
 
 theHobbit.info()
 
-console.log(Object.getPrototypeOf(theHobbit) === Book.prototype) // this is to understand - WHAT ARE PROTOTYPES?
-console.log(Object.getPrototypeOf(Object.prototype));
+// console.log(Object.getPrototypeOf(theHobbit) === Book.prototype) // this is to understand - WHAT ARE PROTOTYPES?
+// console.log(Object.getPrototypeOf(Object.prototype));
+
+// DARK MODE 
+
+document.addEventListener('DOMContentLoaded', () => {
+    const darkModeBtn = document.querySelector('#dark-mode');
+
+    darkModeBtn.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+    });
+});
