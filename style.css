@@ -1,0 +1,34 @@
+/* #dark-mode {
+    background: black;
+    color: white;
+} */
+
+body {
+    background: white;
+    color: black;
+    transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Dark mode styles */
+.dark-mode {
+    background: black;
+    color: white;
+}
+
+/* Style for the button to ensure visibility */
+#dark-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 40%;
+}
+
+.dark-mode #dark-mode {
+    background: white;
+    color: black;
+}
